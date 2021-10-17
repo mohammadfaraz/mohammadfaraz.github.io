@@ -1,10 +1,9 @@
 html {
-	background: #000000;
+    width: 595px;
+	height: 842px;
 }
 body {
 	margin: auto;
-	width: 595px;
-	height: 842px;
 	font-family: 'Noto Sans', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -126,7 +125,7 @@ a {
 .margin-top--20 {
 	margin-top: -20px;
 }
-ul#technology-list, #achievement-list {
+ul#technology-list, #achievement-list, #award-list {
 	margin-bottom: 10px;
 	padding-left: 15px;
 	width: 95%;
