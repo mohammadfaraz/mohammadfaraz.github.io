@@ -1,153 +1,232 @@
-html {
-    width: 595px;
-	height: 842px;
-}
-body {
-	margin: auto;
-	font-family: 'Noto Sans', sans-serif;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: white;
-	font-style: italic;
-	font-size: 12px;
-	line-height: 1.4;
-}
-.padding-0px {
-	padding: 0px;
-}
-.header { 	
-	position: relative;
-	background: #404a6c;
-	font-weight: bold;
-	z-index: 100;
-	padding-left: 15px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.name {
-	font-weight: bold;
-	font-size: 25px;
-	text-transform: uppercase;
-	padding-top: 10px;
-}
-.designation {
-	position: relative;
-	top: -5px;
-}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-.diagonal {
-	background-color: #404a6c;
-	transform: rotate(3deg);
-	height: 40px;
-	width: 100%;
-	position: relative;
-	top: -20px;
-	left: 0px;
-}
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:400i|Source+Sans+Pro:400i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.brief_description {
-	width: 70%;
-	display: block;
-}
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-.profile_pic_wrapper {
-	position: absolute;
-	width: 140px;
-	height: 140px;
-	top: 21px;
-	right: 15px;
-	z-index: 100;
-	border: 5px solid #FC7833;	
-	border-radius: 100px;
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-}
-.profile_pic {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border-radius: 100px;
-}
-.margin-top-10 {
-	margin-top: 10px;
-}
-.margin-left--30 {
-	margin-left: -30px;
-}
-.margin-left--13 {
-	margin-left: -13px;
-}
-.padding-bottom-20 {
-	padding-bottom: 20px;
-}
-.margin-top-5 {
-	margin-top: 5px;
-}
-ul#detail-box-margin-bottom-top {
-	margin-bottom: 5px;
-	margin-left: -18px;
-}
-.fa_icon {
-	background: #fff;
-	padding: 5px;
-	color: #000;
-	border-radius: 50%;
-	font-size: 10px;
-}
-a {
-	color: #fff;
-}
-.split {
-	height: 100%;
-	width: 100%;
-	top: 0;
-} 
-.box-title {
-	border-bottom: 1px solid #000000;
-	font-size: 16px;
-	text-transform: uppercase;
-	color: black; 
-	font-weight: bold;
-}
-.padding-left-10px {
-	padding-left: 10px;
-}
-.padding-right-0px {
-	padding-right: 0px;	
-}
-.detail-box {
-	padding-top: 5px;
-	padding-left: 15px;
-	text-align: justify;
-}
-/*#experience-box .detail-box:nth-child(2n) {
-	background-color: #f3f3f3;
-    border-radius: 6px; 
-}*/
-.margin-top--20 {
-	margin-top: -20px;
-}
-ul#technology-list, #achievement-list, #award-list {
-	margin-bottom: 10px;
-	padding-left: 15px;
-	width: 95%;
-	padding-top: 5px;
-}
-.rating {
-	padding-top: 5px;
-	color: #C4C4C4; 
-	font-size: 15px;
-}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-.background-f3f3f3 {
-	background-color: #f3f3f3;
-	border-radius: 6px; 
-}
 
-.rating-active {
-	color: #000;
-}
-.margin-top-5 {
-	margin-top: 5px;
-}
-.padding-left-0 {
-	padding-left: 0px;
-}
+	<title>Faraz Mohammad</title>
+</head>
+<body class="padding-0px">
+	<div class="header">
+		<div class="profile_pic_wrapper">
+			<img class="profile_pic" src="img/profile_pic.jpg" height="100%" width="100%"></div>
+			<div class="name">Faraz Mohammad</div>
+			<div class="designation">Software Development Engineer</div>
+			<span class="brief_description">
+				A computer science graduate with interest in open source web technologies; Aspiring to develop real world platform agnostic full stack applications. Currently on a look out for
+				opportunities pertaining to Java8, micro services, spring boot.   
+			</span>
+			<div class="row margin-top-10">
+				<div class="col-4">
+					<i class="fa_icon fas fa-home"></i>
+					<span>&nbsp;Bangalore, India</span>
+				</div>
+				<div class="col-3">
+					<i class="fa_icon fas fa-birthday-cake"></i>
+					&nbsp;21.06.1995
+				</div>
+				<div class="col-3 margin-left--30">
+					<i class="fa_icon fas fa-mobile"></i>
+					&nbsp;+91-8860396322
+				</div>
+			</div>
+			<div class="row margin-top-10 padding-bottom-20">
+				<div class="col-4">
+					<a href="http://linkedin.com/in/mohammadfaraz"><i class="fa_icon fa fa-linkedin-square"></i>&nbsp;linkedin.com/mohammadfaraz</a>
+				</div>
+				<div class="col-5">
+					<i class="fa_icon fas fa-envelope"></i>
+					&nbsp;mr.mohammadfaraz@gmail.com
+				</div>
+			</div>
+		</div>
+		<div class="diagonal"></div>
+		<div class="row" style="color: black;">
+			<!-- Left Part 1 -->
+			<div class="col-7">
+				<div id= "experience-box">
+					<div class="box-title"><h7>&emsp;Experience</h7></div>
+					<div class="detail-box">
+						<b>GE Healthcare | Senior Software Engineer</b><br>
+						<span>July 2021 - Present</span><br>
+                        <b>Software Engineer</b><br>
+                        <span>February 2019 - June 2021</span><br>
+						Designed and developed modules for new gen smart monitoring solution for clinicians leveraging <b>micro services architecture, RESTful web services, Java
+						8, Spring boot, WebFlux, Angular, Kafka, Kubernetes, docker, FHIR, HL7.</b> Worked on various modules like
+						live monitoring, admit, discharge, emergency alarms and critical notification etc.
+					</div>
+					<div class="detail-box background-f3f3f3 margin-top-5">
+						<b>SecurAX Tech Solutions | Software Development Engineer</b><br>
+						<span>August 2017 - January 2019</span><br>
+						Designed and developed HRMS application using:
+						<ul id="detail-box-margin-bottom-top">
+							<li>Microservices, Java8, Spring, JPA, schedulers, AWS S3</li>
+							<li>HTML, CSS, Angular4, Postgres, MongoDB</li>
+						</ul>
+					</div>
+					<div class="detail-box">
+						<b>Plavaga Software Solutions | Intern</b><br>
+						<span>January 2017 - June 2017</span><br>
+						Designed and developed an IoT based smart lighting solution using:
+						<ul id="detail-box-margin-bottom-top">
+							<li>Software technologies - IOT, Android, MQTT, ESP programming using embedded C.</li>
+							<li>Hardware - ESP8266, Raspberry Pi, Relays.</li>
+						</ul>
+					</div>
+				</div>
+				<div id= "projects-box">
+					<div class="box-title"><h7>&emsp;Projects</h7></div>
+					<div class="detail-box margin-top-5">
+						<b>Perinatal Surveillance | GE Healthcare</b><br>
+						Perinatal Surveillance is a clinical information system that integrates documentation and fetal surveillance to help clinicians exceptional care ot mother and baby. From the delivery room to the nursery it captures data from various sources to achieve a readily available, robust patient record.</b>
+					</div>
+				</div>
+            <div id= "awards-box">
+					<div class="box-title"><h7>&emsp;Awards</h7></div>
+					<div class="detail-box margin-top-5">
+						<ul id="award-list">
+                            <li>GE Impact Award (February 2020)</li>
+                            <li>GE Focus Award (November 2020)</li>
+                        </ul>
+                </div>
+				</div>
+			</div>
+			<!-- Right Part 1 -->
+			<div class="col-5 margin-left--13 padding-right-0px">
+				<div id="eduction-box">
+					<div class="box-title"><h7>&emsp;Education</h7></div>
+					<div class="detail-box">
+						<b>Amity School of Engineering and Technology</b><br>
+						<span>B. Tech., Computer Science | 2013 – 2017 | 73%</span>
+					</div>
+					<div class="detail-box">
+						<b>Dayawati Modi Academy</b><br>
+						<span>Class 12<sup>th</sup> , CBSE | 2013 | 90%</span>
+					</div>
+					<div class="detail-box">
+						<b>Dayawati Modi Academy</b><br>
+						<span>Class 10<sup>th</sup> , CBSE | 2011 | 91%</span>
+					</div>
+				</div>
+				<div id="technology-box" class="margin-top-10">
+					<div class="box-title"><h7>&emsp;Technology Stack</h7></div>
+					<div>
+						<ul id="technology-list">
+							<li>Java 8, Spring Framework, JPA, RESTful web services, Micro services, OAuth</li>
+							<li>Database partitioning, Sharding, Basic Data Structures</li>
+							<li>TypeScript, Angular, HTML, CSS</li>
+							<li>Kubernetes, Docker, AWS S3, Jenkins, </li>
+							<li>IoT, MQTT, Kafka, TDD/BDD</li>
+						</ul>
+					</div>
+				</div>
+				<div id="software-box">
+					<div class="box-title"><h7>&emsp;Languages & IDE</h7></div>
+					<div class="detail-box">
+						<div id="backend-box" class="row">
+							<div class="col-6">
+								<span>Java</span><br>
+								<div>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star "></i>
+								</div>
+							</div>
+							<div class="col-6 padding-left-0">
+								<span>Spring</span><br>
+								<div>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star-half-alt rating-active"></i>
+									<i class="rating fas fa-star "></i>
+								</div>
+							</div>
+							<div class="col-6 margin-top-10">
+								<span>Microservices</span><br>
+								<div>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star "></i>
+									<i class="rating fas fa-star "></i>
+								</div>
+							</div>
+							<div class="col-6 padding-left-0 margin-top-10">
+								<span>Angular</span><br>
+								<div>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star "></i>
+									<i class="rating fas fa-star "></i>
+								</div>
+							</div>
+						</div>
+						<div id="frontend-box" class="row margin-top-10">
+							<div class="col-6">
+								<span>Kubernetes</span><br>
+								<div>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star "></i>
+									<i class="rating fas fa-star "></i>
+								</div>
+							</div>
+							<div class="col-6 padding-left-0">
+								<span>IntelliJ IDEA</span><br>
+								<div>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star rating-active"></i>
+									<i class="rating fas fa-star "></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="achievement-box" class="margin-top-10">
+					<div class="box-title"><h7>&emsp;Achievements</h7></div>
+					<div>
+						<ul id="achievement-list">
+							<li>Marker Cup holder</li>
+							<li>Grad Scholarship holder</li>
+							<li>Organizer, Anchor-conferences & fest</li>
+							<li>Cultural Secretary</li>
+							<li>Team Lead (1<sup>st</sup> Internship)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
